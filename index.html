@@ -1,119 +1,49 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Robô Vendedor</title>
-  <meta name="description" content="Encontre produtos e ofertas selecionadas pelo Robô Vendedor.">
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #f7f7ff, #ececff);
-      color: #222;
-      min-height: 100vh;
-    }
-    header {
-      padding: 22px 20px;
-      text-align: center;
-      background: #ffffff;
-      box-shadow: 0 2px 12px rgba(0,0,0,.08);
-    }
-    header h1 { font-size: 30px; }
-    header p { margin-top: 8px; color: #666; }
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    .hero {
-      background: white;
-      border-radius: 24px;
-      padding: 45px 25px;
-      box-shadow: 0 10px 35px rgba(0,0,0,.08);
-    }
-    .robot { font-size: 64px; margin-bottom: 15px; }
-    h2 { font-size: 36px; margin-bottom: 15px; }
-    .hero p {
-      max-width: 650px;
-      margin: 0 auto 28px;
-      line-height: 1.6;
-      color: #555;
-      font-size: 18px;
-    }
-    .button {
-      display: inline-block;
-      padding: 15px 28px;
-      border-radius: 12px;
-      background: #6c4cff;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: .2s;
-    }
-    .button:hover { transform: translateY(-2px); opacity: .92; }
-    .products {
-      margin-top: 35px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 18px;
-    }
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 18px;
-      box-shadow: 0 6px 20px rgba(0,0,0,.06);
-    }
-    .card h3 { margin-bottom: 10px; }
-    .card p { color: #666; line-height: 1.5; }
-    footer {
-      text-align: center;
-      padding: 30px;
-      color: #777;
-      font-size: 14px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Robô Vendedor | Oferta Especial</title>
+<meta name="description" content="Conheça a oferta selecionada pelo Robô Vendedor.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:linear-gradient(135deg,#f7f4ff,#eeeaff);color:#222;min-height:100vh}
+header{background:#fff;padding:20px;text-align:center;box-shadow:0 2px 12px rgba(0,0,0,.08)}
+header h1{font-size:28px} header p{color:#666;margin-top:7px}
+main{max-width:900px;margin:auto;padding:45px 18px}
+.hero{background:#fff;border-radius:26px;padding:42px 24px;text-align:center;box-shadow:0 12px 40px rgba(0,0,0,.09)}
+.robot{font-size:65px;margin-bottom:12px} h2{font-size:36px;margin-bottom:15px}
+.intro{max-width:650px;margin:0 auto 25px;color:#555;font-size:18px;line-height:1.6}
+.offer{margin:25px auto;max-width:620px;padding:25px;border-radius:20px;background:#f7f5ff}
+.offer h3{font-size:25px;margin-bottom:10px}.offer p{color:#555;line-height:1.5}
+.button{display:inline-block;margin-top:22px;padding:17px 34px;border-radius:14px;background:#6c4cff;color:#fff;text-decoration:none;font-size:19px;font-weight:bold;box-shadow:0 7px 18px rgba(108,76,255,.28);transition:.2s}
+.button:hover{transform:translateY(-2px);opacity:.94}
+.cards{margin-top:25px;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.card{background:#fff;padding:22px;border-radius:18px;text-align:center;box-shadow:0 5px 18px rgba(0,0,0,.06)}
+.card div{font-size:30px;margin-bottom:10px}.card p{color:#666;line-height:1.5}
+footer{text-align:center;padding:25px;color:#777;font-size:13px}
+</style>
 </head>
 <body>
-
-<header>
-  <h1>🤖 Robô Vendedor</h1>
-  <p>Ofertas e produtos selecionados para você</p>
-</header>
-
+<header><h1>🤖 Robô Vendedor</h1><p>Uma oportunidade selecionada para você</p></header>
 <main>
-  <section class="hero">
-    <div class="robot">🤖</div>
-    <h2>Seu Robô Vendedor</h2>
-    <p>
-      Descubra produtos, ofertas e oportunidades selecionadas.
-      Nosso robô ajuda você a encontrar opções interessantes de forma simples e rápida.
-    </p>
-    <a class="button" href="#produtos">Ver produtos</a>
-  </section>
-
-  <section class="products" id="produtos">
-    <div class="card">
-      <h3>🛍️ Produto em destaque</h3>
-      <p>Em breve vamos colocar aqui o primeiro produto para divulgação.</p>
-    </div>
-
-    <div class="card">
-      <h3>🔥 Oferta</h3>
-      <p>Espaço reservado para uma oferta especial e seu link de afiliado.</p>
-    </div>
-
-    <div class="card">
-      <h3>💰 Recomendação</h3>
-      <p>O Robô Vendedor poderá apresentar recomendações e direcionar para a compra.</p>
-    </div>
-  </section>
+<section class="hero">
+<div class="robot">🤖</div>
+<h2>Encontrei uma oferta para você!</h2>
+<p class="intro">O Robô Vendedor selecionou esta oportunidade para você. Confira os detalhes e, se fizer sentido para você, acesse a oferta.</p>
+<div class="offer">
+<h3>🔥 Oferta em destaque</h3>
+<p>Clique no botão abaixo para conhecer a oferta completa e verificar todas as informações diretamente na página do produto.</p>
+<a class="button" href="https://go.hotmart.com/N107939257K" target="_blank" rel="noopener noreferrer">🛒 QUERO CONHECER A OFERTA</a>
+</div>
+</section>
+<section class="cards">
+<div class="card"><div>⚡</div><h3>Rápido</h3><p>Acesse a oferta diretamente pelo botão acima.</p></div>
+<div class="card"><div>🔎</div><h3>Confira os detalhes</h3><p>Veja as informações completas antes de decidir.</p></div>
+<div class="card"><div>🛍️</div><h3>Compra segura</h3><p>A compra acontece na página oficial da oferta.</p></div>
+</section>
 </main>
-
-<footer>
-  © 2026 Robô Vendedor — Conteúdo promocional.
-</footer>
-
+<footer>© 2026 Robô Vendedor</footer>
 </body>
 </html>
